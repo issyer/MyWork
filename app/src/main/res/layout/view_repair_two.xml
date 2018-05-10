@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/TableLayout2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点"
+                    android:textSize="23dp"/>
+                <Spinner
+                    android:id="@+id/spin_one2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:entries="@array/place"
+                    android:spinnerMode="dialog"
+                    android:layout_height="64dp" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="维修地点"
+                    android:textSize="23dp"/>
+                <Spinner
+                    android:id="@+id/spin_three2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:entries="@array/where"
+                    android:spinnerMode="dialog"
+                    android:layout_height="64dp" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="维修项目"
+                    android:textSize="23dp"/>
+                <Spinner
+                    android:id="@+id/spin_four2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:entries="@array/what"
+                    android:spinnerMode="dialog"
+                    android:layout_height="64dp" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="手机号"
+                    android:textSize="23dp"/>
+                <AutoCompleteTextView
+                    android:id="@+id/msg_repair_phone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="输入手机号"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="报修描述"
+                    android:textSize="23dp"/>
+                <AutoCompleteTextView
+                    android:id="@+id/msg_repair2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="12dp"
+                    android:hint="请将报修信息进行详细描述"
+                    android:layout_marginLeft="30dp"
+                    android:background="@null"
+                    android:maxLines="5"
+                    android:singleLine="false" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/bt_repair2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/orange"
+            android:text="立即提交"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

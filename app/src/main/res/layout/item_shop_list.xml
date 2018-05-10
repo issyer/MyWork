@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:orientation="horizontal">
+
+    <!-- 定义一个用于显示头像的ImageView -->
+    <ImageView
+        android:id="@+id/img_shop_tou"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:baselineAlignBottom="true"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/msg1"
+        android:paddingLeft="8dp" />
+
+    <!-- 定义一个竖直方向的LinearLayout,把QQ呢称与说说的文本框设置出来 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/whats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8px"
+            android:text="你的快递已有菜鸟驿站代收."
+            android:textColor="#1D1D1C"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="物流消息"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_shop_cart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="26dp"
+                android:paddingLeft="8dp"
+                android:src="@mipmap/msg1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
